@@ -4,21 +4,21 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>Hello World | J.Wang&#39;s blog</title>
+  <title>使用Matlab的mex文件以及openmp加速 | J.Wang&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+  <meta name="description" content="使用Matlab的mex文件以及openmp加速##Why MEX
+由于matlab的迭代器不太给力，Mathworks建议大家尽量将程序向量化。但是我们有时候需要使用for 循环，这时可以自己编写c代码再编译成mex文件。这样就可以在matlab中调用。同时以后的c模块也可以通过编写mex文件来与matlab交互。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://jevonswang.github.io/2015/11/23/hello-world/index.html">
+<meta property="og:title" content="使用Matlab的mex文件以及openmp加速">
+<meta property="og:url" content="http://jevonswang.github.io/2015/12/11/使用Matlab的max文件以及openmp加速/index.html">
 <meta property="og:site_name" content="J.Wang's blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2016-04-10T08:52:46.000Z">
+<meta property="og:description" content="使用Matlab的mex文件以及openmp加速##Why MEX
+由于matlab的迭代器不太给力，Mathworks建议大家尽量将程序向量化。但是我们有时候需要使用for 循环，这时可以自己编写c代码再编译成mex文件。这样就可以在matlab中调用。同时以后的c模块也可以通过编写mex文件来与matlab交互。">
+<meta property="og:updated_time" content="2016-04-10T15:21:52.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="使用Matlab的mex文件以及openmp加速">
+<meta name="twitter:description" content="使用Matlab的mex文件以及openmp加速##Why MEX
+由于matlab的迭代器不太给力，Mathworks建议大家尽量将程序向量化。但是我们有时候需要使用for 循环，这时可以自己编写c代码再编译成mex文件。这样就可以在matlab中调用。同时以后的c模块也可以通过编写mex文件来与matlab交互。">
   
     <link rel="alternative" href="/atom.xml" title="J.Wang&#39;s blog" type="application/atom+xml">
   
@@ -174,11 +174,11 @@ Quick">
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-使用Matlab的max文件以及openmp加速" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/11/23/hello-world/" class="article-date">
-  	<time datetime="2015-11-23T15:39:04.000Z" itemprop="datePublished">2015-11-23</time>
+      <a href="/2015/12/11/使用Matlab的max文件以及openmp加速/" class="article-date">
+  	<time datetime="2015-12-11T07:17:34.000Z" itemprop="datePublished">2015-12-11</time>
 </a>
     </div>
   
@@ -191,7 +191,7 @@ Quick">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      使用Matlab的mex文件以及openmp加速
     </h1>
   
 
@@ -200,12 +200,12 @@ Quick">
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mex/">mex</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/openmp/">openmp</a></li></ul>
 	</div>
 
         
 	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/环境配置/">环境配置</a>
+	<a class="article-category-link" href="/categories/matlab/">matlab</a>
 	</div>
 
 
@@ -215,16 +215,14 @@ Quick">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<!--mode-->
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <h1 id="使用Matlab的mex文件以及openmp加速"><a href="#使用Matlab的mex文件以及openmp加速" class="headerlink" title="使用Matlab的mex文件以及openmp加速"></a>使用Matlab的mex文件以及openmp加速</h1><p>##Why MEX</p>
+<p>由于matlab的迭代器不太给力，Mathworks建议大家尽量将程序向量化。但是我们有时候需要使用for 循环，这时可以自己编写c代码再编译成mex文件。这样就可以在matlab中调用。同时以后的c模块也可以通过编写mex文件来与matlab交互。</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h2><p>##Hello World!</p>
+<p>下面是一段简单的c代码，可以把它保存为helloworld.c, 然后在matlab执行 mex helloworld.c 编译。然后运行 helloworld()</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="string">"math.h"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="string">"mex.h"</span>   //--This one is required</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">mexFunction</span><span class="params">(<span class="keyword">int</span> nlhs, mxArray *plhs[], <span class="keyword">int</span> nrhs, <span class="keyword">const</span> mxArray *prhs[])</span></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"Hello world!\n"</span>);</span><br><span class="line">    return;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<p>##使用OpenMP加速<br>OpenMP可以充分利用现在多核处理器的多个核心来进行并行运算。使用起来也很简单。首先在文件头插入引用<code>#include&lt;opm.h&gt;</code><br>然后在需要并行化的代码里加入openmp指令：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> omp parallel for</span></span><br><span class="line"><span class="keyword">for</span> (i_b = <span class="number">0</span>; i_b &lt; n2; i_b++)&#123;</span><br><span class="line">    <span class="keyword">int</span> code,sum,loc;</span><br><span class="line">    sum = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (code = <span class="number">0</span>; code&lt;d; code++)&#123;</span><br><span class="line">        loc = C1[i_a*d+code]+C2[i_b*d+code]*<span class="number">256</span>;</span><br><span class="line">        sum = sum+T[loc];</span><br><span class="line">    &#125;</span><br><span class="line">    D[i_b*n1+i_a] = sum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>这里调用是通过<code>#pragma</code>命令执行的。<br>最后，需要编译成mex文件，可以通过在matlab内执行mex命令来实现。使用openmp需要打开对应的编译器开关，命令如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt; mex youfile.c COMPFLAGS=&quot;/openmp $COMPFLAGS&quot;</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -234,15 +232,20 @@ Quick">
     
 <nav id="article-nav">
   
-    <a href="/2015/11/30/git使用小结/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2015/12/17/安卓开发环境配置/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          git使用小结
+          安卓开发环境配置
         
       </div>
     </a>
   
+  
+    <a href="/2015/11/30/git使用小结/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">git使用小结</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
   
 </nav>
 
@@ -286,7 +289,7 @@ Quick">
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="hello-world" data-title="Hello World" data-url="http://jevonswang.github.io/2015/11/23/hello-world/"></div>
+	<div class="ds-thread" data-thread-key="使用Matlab的max文件以及openmp加速" data-title="使用Matlab的mex文件以及openmp加速" data-url="http://jevonswang.github.io/2015/12/11/使用Matlab的max文件以及openmp加速/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
