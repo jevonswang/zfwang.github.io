@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>git使用小结 | J.Wang&#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="#Git使用小结（一）
+##一、创建版本库
+
+创建文件目录：mkdir learngit
+进入目录：cd learngit
+初始化：git init
+git config –global user.name “someone”
+git config –global user.email “someone@some.con”
+git add somefile.txt
+git commit -m “s">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git使用小结">
+<meta property="og:url" content="http://jevonswang.github.io/2015/11/30/git使用小结/index.html">
+<meta property="og:site_name" content="J.Wang's blog">
+<meta property="og:description" content="#Git使用小结（一）
+##一、创建版本库
+
+创建文件目录：mkdir learngit
+进入目录：cd learngit
+初始化：git init
+git config –global user.name “someone”
+git config –global user.email “someone@some.con”
+git add somefile.txt
+git commit -m “s">
+<meta property="og:updated_time" content="2016-04-10T07:50:45.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="git使用小结">
+<meta name="twitter:description" content="#Git使用小结（一）
+##一、创建版本库
+
+创建文件目录：mkdir learngit
+进入目录：cd learngit
+初始化：git init
+git config –global user.name “someone”
+git config –global user.email “someone@some.con”
+git add somefile.txt
+git commit -m “s">
+  
+    <link rel="alternative" href="/atom.xml" title="J.Wang&#39;s blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://7xosgj.com1.z0.glb.clouddn.com/13550C3Z-76.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Zhefeng Wang</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">Computer Vision, Machine Learning</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>Menu</li>
+						<li>Tags</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/jevonswang" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="http://weibo.com/u/2794556480" title="weibo">weibo</a>
+					        
+								<a class="zhihu" target="_blank" href="http://www.zhihu.com/people/wang-zhefeng-55-69" title="zhihu">zhihu</a>
+					        
+								<a class="linkedin" target="_blank" href="http://www.linkedin.com/profile/view?id=AAIAAAwEmNMB_46wRXfyW1zXOiLkAOWQjjF_usA" title="linkedin">linkedin</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a>
+					</div>
+				</section>
+				
+				
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Zhefeng Wang</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="http://7xosgj.com1.z0.glb.clouddn.com/13550C3Z-76.jpg" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Zhefeng Wang</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">Computer Vision, Machine Learning</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/jevonswang" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/u/2794556480" title="weibo">weibo</a>
+			        
+						<a class="zhihu" target="_blank" href="http://www.zhihu.com/people/wang-zhefeng-55-69" title="zhihu">zhihu</a>
+			        
+						<a class="linkedin" target="_blank" href="http://www.linkedin.com/profile/view?id=AAIAAAwEmNMB_46wRXfyW1zXOiLkAOWQjjF_usA" title="linkedin">linkedin</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-git使用小结" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/11/30/git使用小结/" class="article-date">
+  	<time datetime="2015-11-30T15:52:32.000Z" itemprop="datePublished">2015-11-30</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      git使用小结
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/">github</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/编程工具/">编程工具</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#Git使用小结（一）</p>
+<p>##一、创建版本库</p>
+<ul>
+<li>创建文件目录：mkdir learngit</li>
+<li>进入目录：cd learngit</li>
+<li>初始化：git init</li>
+<li>git config –global user.name “someone”</li>
+<li>git config –global user.email “someone@some.con”</li>
+<li>git add somefile.txt</li>
+<li>git commit -m “some comments”</li>
+</ul>
+<a id="more"></a> 
+<p>##二、版本管理</p>
+<ul>
+<li><p>通过<code>git status</code>可以看到当前版本库的状态，如文件的新增删除修改等。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br><span class="line">On branch master</span><br><span class="line">Your branch is up-to-date with &apos;origin/master&apos;.</span><br><span class="line">Changes not staged for commit:</span><br><span class="line">  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)</span><br><span class="line">  (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)</span><br><span class="line"></span><br><span class="line">        modified:   readme.txt</span><br><span class="line"></span><br><span class="line">Untracked files:</span><br><span class="line">  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)</span><br><span class="line"></span><br><span class="line">        test.py</span><br><span class="line"></span><br><span class="line">no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如果不知道哪里被修改了，可以使用<code>git diff</code>查看。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$ git diff</span><br><span class="line">diff --git a/readme.txt b/readme.txt</span><br><span class="line">index 90a675b..e163ff9 100644</span><br><span class="line">--- a/readme.txt</span><br><span class="line">+++ b/readme.txt</span><br><span class="line">@@ -1,3 +1,4 @@</span><br><span class="line"> Some of the solutions of leetcode(https://leetcode.com).</span><br><span class="line"> Coded in Python.</span><br><span class="line">-All rights reserved.</span><br><span class="line">+All rights reserved</span><br><span class="line">+@2015</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>每commit一次，都会生成一个版本，当想要退回到这一版本的时候，可以先试用<code>git log</code>找到当时的历史记录。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">$ git log</span><br><span class="line">commit c1f57773b78bae78e2db93a88384b1603626794f</span><br><span class="line">Author: jevonswang &lt;972562104@qq.com&gt;</span><br><span class="line">Date:   Sun Oct 25 21:12:14 2015 +0800</span><br><span class="line"></span><br><span class="line">    change readme.txt</span><br><span class="line"></span><br><span class="line">commit fd249719dc8b4ec5a6b16227e24c2513b18a1149</span><br><span class="line">Author: jevonswang &lt;972562104@qq.com&gt;</span><br><span class="line">Date:   Sun Oct 25 21:05:30 2015 +0800</span><br><span class="line"></span><br><span class="line">    First commit</span><br><span class="line"></span><br><span class="line">commit 0aa2720c83e35054fce8e49f2a63c33be7a35947</span><br><span class="line">Author: jevonswang &lt;972562104@qq.com&gt;</span><br><span class="line">Date:   Sun Oct 25 20:23:02 2015 +0800</span><br><span class="line"></span><br><span class="line">    wrote a readme file</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>如果感觉输出的参数太多可以加一个<code>--pretty=oneline</code>参数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git log --pretty=oneline</span><br><span class="line">c1f57773b78bae78e2db93a88384b1603626794f change readme.txt</span><br><span class="line">fd249719dc8b4ec5a6b16227e24c2513b18a1149 First commit</span><br><span class="line">0aa2720c83e35054fce8e49f2a63c33be7a35947 wrote a readme file</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>在git中，用<code>HEAD</code>表示当前版本，用<code>HEAD^</code>表示上一版本，用<code>HEAD~100</code>表示上100个版本。如果想退回到上一版本，可以使用<code>git reset</code>命令。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git reset --hard HEAD^</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>也可以直接输入版本号：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git reset --hard 0aa2720</span><br></pre></td></tr></table></figure></p>
+<p>回到历史版本后，新版本的记录就不能通过<code>git log</code>看到了，这是如果忘记新版本的版本号，则很难在返回到新版本，不过可以用<code>git reflog</code>查看历史命令，找到新版本的版本号.</p>
+<ul>
+<li>撤消修改：当想要撤销某一修改的时候，如果还没有commit，可以使用<code>git checkout -- filename</code>命令，这时该文件就会回到最近一次commit或add时的状态；如果已经commit了，就要先使用<code>git reset</code>命令，再使用<code>git checkout</code>。</li>
+<li>当想要删除一个文件时，可以使用<code>git rm</code>命令。如果误删了某一文件，但是版本库中还有的话，可以使用<code>git checkout -- filename</code>命令恢复。checkout命令其实就是用版本库中的版本替换工作区的版本。<br>##三、远程仓库</li>
+<li>我们可以把代码推送到远程仓库进行备份，如github。</li>
+<li>在使用前需要先注册一个github账号，然后创建一个ssh key<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C &quot;youremail@example.com&quot;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>这时在主目录下会有一个.ssh目录，里面有<code>id_rsa</code>和<code>id_rsa.pub</code>两个文件。然后打开github的<code>Settings</code>-&gt;<code>SSH keys</code>-&gt;<code>Add SSH key</code>，将<code>id_rsa.pub</code>中的内容粘贴到Key中，Title可以随便起。这样就完成了SSH的设置。</p>
+<ul>
+<li>如果想在github上进行同步，我们首先要先在github上建立一个仓库。首先，点击右上角的<code>+</code>进入Create  New Repository界面，填写相应的信息后确认，新仓库就建立好了。</li>
+<li>然后在本地仓库下关联远程仓库：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add origin git@github.com:yourname/repositoryname.git</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>这时就可以将本地库中的内容推送到远程仓库中去了：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push -u origin master</span><br></pre></td></tr></table></figure></p>
+<p>参数<code>-u</code>会把本地的<code>master</code>分支和远程仓库的<code>master</code>分支关联起来，以后就可以直接进行推送了。</p>
+<ul>
+<li>使用<code>git clone</code>命令可以把远程仓库中的一个目录克隆到本地。后面的目录地址支持<code>ssh</code>协议和<code>https</code>协议，以<code>git://</code>开头的地址是ssh协议，以<code>https://</code>开头的是https协议，一般https协议会比较慢，而且每次都要输入口令。</li>
+</ul>
+<p><br><br> ——本文参考自<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">廖学峰的Git教程</a></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/11/23/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+<div class="share_addthis">
+  <div class="sharing addthis_toolbox share">
+    <a class="addthis_button_facebook_like"></a>
+    <a class="addthis_button_tweet"></a>
+    <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-560c64c35486b3d4" async="async"></script>
+</div>
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="git使用小结" data-title="git使用小结" data-url="http://jevonswang.github.io/2015/11/30/git使用小结/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 Zhefeng Wang
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
